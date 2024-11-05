@@ -42,7 +42,6 @@ func WebTemplate() *http.ServeMux {
 
 func staticHandler(w http.ResponseWriter, r *http.Request) {
 	path := r.URL.Path
-	log.Println(path)
 	var data []byte
 
 	if strings.HasSuffix(path, "js") {

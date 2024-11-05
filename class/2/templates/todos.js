@@ -1,1 +1,2 @@
-console.log('todos')
+const token = sessionStorage.getItem("token");
+console.log(token)

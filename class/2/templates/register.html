@@ -8,8 +8,30 @@
 {{template "header" .}}
 
 <main>
-    <h2>Halaman Registration</h2>
-    <p>Selamat datang di halaman registrasi!</p>
+    <h2>Registration</h2>
+    <form id="frm-registration" method="post">
+        <div>
+            <label for="name">Name</label>
+        </div>
+        <div>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="name">Username</label>
+        </div>
+        <div>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="name">Password</label>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button id="btn-save" type="button">Save</button>
+        </div>
+    </form>
 </main>
 
 {{template "footer" .}}

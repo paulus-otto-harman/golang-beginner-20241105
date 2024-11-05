@@ -7,7 +7,8 @@ import (
 )
 
 type WebPageData struct {
-	Title string
+	Title  string
+	Script template.JS
 }
 
 type WebPage struct {

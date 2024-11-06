@@ -4,8 +4,23 @@ body {
     margin: auto;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
 h1 {
     color: #3e8e41;
+    text-align: center;
+}
+
+h2 {
+    color: darkmagenta;
     text-align: center;
 }
 
@@ -20,4 +35,44 @@ nav li {
     display: inline-block;
     font-size: 1.2rem;
     padding: 5px 20px;
+}
+
+form#frm-registration {
+    width:320px;
+    margin:auto;
+}
+
+form#frm-registration div:has(label) {
+    margin: 0.5em 0 0.25em 0;
+}
+
+form#frm-registration div:not(:has(label)) {
+    margin: 0 0 1rem 0;
+}
+
+form#frm-registration input {
+    width: 75%;
+    line-height: 2em;
+}
+
+table#users, table#todos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    padding: 0.5em;
+}
+
+table#users span.active, table#todos span.done {
+    color: #4CAF50;
+}
+
+table#users span.inactive, table#todos span.in-progress {
+    color: crimson;
+    font-weight: bold;
 }

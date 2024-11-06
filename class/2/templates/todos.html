@@ -8,8 +8,16 @@
 {{template "header" .}}
 
 <main>
-    <h2>Halaman Todos</h2>
-    <p>Selamat datang di halaman todos!</p>
+    <h2>Todo List</h2>
+    <table id="todos">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody id="tbl-todos"></tbody>
+    </table>
 </main>
 
 {{template "footer" .}}

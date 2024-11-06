@@ -46,7 +46,7 @@ func (repo *User) All(session model.Session) ([]model.User, error) {
 	var users []model.User
 	for rows.Next() {
 		var user model.User
-		if err := rows.Scan(&user.Id, &user.Username, &user.Password, &user.IsActive); err != nil {
+		if err := rows.Scan(&user.Id, &user.Name, &user.Username, &user.IsActive); err != nil {
 			return []model.User{}, err
 		}
 		users = append(users, user)

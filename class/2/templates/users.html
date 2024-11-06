@@ -8,8 +8,17 @@
 {{template "header" .}}
 
 <main>
-    <h2>Halaman List Data User</h2>
-    <p>Selamat datang di halaman users!</p>
+    <h2>List Data User</h2>
+    <table id="users">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tbl-users"></tbody>
+    </table>
 </main>
 
 {{template "footer" .}}
